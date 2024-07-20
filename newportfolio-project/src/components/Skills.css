@@ -1,6 +1,7 @@
-img {
+.card{
     animation: Move 0.5s infinite forwards;  /* Remove "alternate" */
     animation-timing-function: ease-in;
+    animation: stops;
 }
   
   @keyframes Move {
@@ -16,6 +17,6 @@ img {
       animation-play-state: paused;
     }
   }
-  img:hover{
+  .card:active{
     animation: stops;
   }
