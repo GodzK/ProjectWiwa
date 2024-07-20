@@ -1,0 +1,38 @@
+.button{
+    padding: 1em;
+    border: 2px solid #dd0000;
+    background-color: rgb(255, 202, 202);
+    transition: all 0.3s ;
+}
+.button:hover{
+    transform: translateY(10px);
+
+    background-color: rgb(255, 144, 144);
+}
+h1:hover{
+    animation-name: autoRun;
+    animation-duration: 1s;
+}
+@keyframes autoRun{
+    0%{
+      transform: translateX(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform:translateY(0px);
+    }
+    100%{
+        transform: translateX(40px);
+    }
+}
+body{
+    background-image: url("images.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}

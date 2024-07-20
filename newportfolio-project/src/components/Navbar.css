@@ -1,0 +1,13 @@
+nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+li{
+    color: white;
+}
