@@ -1,29 +1,24 @@
-import React from "react";
-import "./Navbar.css";
-import close from "../assets/close.svg";
-import menu from "../assets/menu.svg";
+import React from 'react'
+import "./navbar.css"
 function navbar() {
   return (
-    <nav>
-      <input type="checkbox" id="sidebar-active" />
-      <label htmlFor="sidebar-active" className="opensidebar">
-        <img src={menu} alt="" height={32} width={32} />
-      </label>
-      <label htmlFor="sidebar-active" id="overlay">
-    
-      </label>
-      <div className="links-container">
-        <label htmlFor="sidebar-active" className="closesidebar">
-          <img src={close} alt="" height={32} width={32} />
-        </label>
-        <a href="" className="home">Home</a>
-        <a href="">about</a>
-        <a href="">project</a>
-        <a href="">Blog</a>
-        <a href="">Login</a>
-      </div>
-    </nav>
-  );
+    <div>
+        <nav className='nav-container'>
+            <div className='nav-header'>
+                <h1>Frontend Practice</h1>
+            </div>
+            <div className='nav-list'>
+                <li>Home</li>
+                <li>Project</li>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>Newsletter</li>
+            </div>
+        </nav>
+        
+    </div>
+  )
 }
 
-export default navbar;
+export default navbar

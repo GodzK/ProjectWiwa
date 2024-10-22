@@ -1,89 +1,23 @@
-:root {
-  --color-1: #fff;
-  --text-color: #000;
-  --hover-color: #006aff;
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    border-bottom: 3px solid #000 ;
 }
-* {
-  margin: 0;
-  padding: 0;
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    top: 10%;
+    font-weight: bold;
+    margin-top: 1.3rem;
 }
-html {
-  font-size: 12pt;
+.nav-list li:hover{
+    text-decoration: underline;
 }
-nav {
-  height: 60px;
-  background-color: var(--text-color);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.nav-header{
+    font-family: var(--header);
+  font-weight: 400;
+  font-style: normal;
 }
-.links-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-nav a {
-  height: 100%;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--color-1);
-}
-nav a:hover {
-  background-color: var(--hover-color);
-  transition: 1s;
-}
-nav .home{
-    margin-right: auto;
-}
-nav img{
-    fill: var(--color-1);
-    /* fix the color of img */
-}
-#sidebar-active{
-    display: none;
-}
-.opensidebar, .closesidebar{
-    display: none;
-    padding: 0 20px;
-}
-@media (max-width : 733px){
-    .links-container{
-        right: -100%;
-        top: 0px;
-        flex-direction: column;
-        align-items: flex-start;
-        position: fixed;
-        background-color: var(--text-color);
-        z-index: 10;
-        width: 200px;
-        transition: 0.6s ease-out;
-    }
-    nav a {
-        box-sizing: border-box;
-        height: auto;
-        width: 100%;
-         padding: 20px;
-       
-    }
-    .opensidebar, .closesidebar{
-        display: block;
-        padding: 0 20px;
-    }
-    #sidebar-active:checked ~ .links-container{
-    right: 0px;
-    }
-    #sidebar-active:checked ~ #overlay{
-       
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
-        }
 
-}
